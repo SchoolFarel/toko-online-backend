@@ -46,4 +46,4 @@ app.post("/upload", upload.single("image"), async (req, res) => {
 app.use("/api/product", productRoutes);
 app.use("/api/contact", contactRoutes);
 
-export default app;
+module.exports = app;
