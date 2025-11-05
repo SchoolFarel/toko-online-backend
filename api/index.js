@@ -46,6 +46,4 @@ app.post("/upload", upload.single("image"), async (req, res) => {
 app.use("/api/product", productRoutes);
 app.use("/api/contact", contactRoutes);
 
-app.listen(PORT, () => {
-  console.log(`Server is running || http://localhost:3000`);
-});
+export default app;
