@@ -4,9 +4,9 @@ import dotenv from "dotenv";
 import cors from "cors";
 import path from "path";
 import multer from "multer";
-import Photo from "./models/Photo.js";
-import productRoutes from "./routes/productRoutes.js";
-import contactRoutes from "./routes/contactRoutes.js";
+import Photo from "../models/Photo.js";
+import productRoutes from "../routes/productRoutes.js";
+import contactRoutes from "../routes/contactRoutes.js";
 
 dotenv.config();
 
