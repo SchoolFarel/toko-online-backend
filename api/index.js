@@ -31,6 +31,10 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use("/uploads", express.static("uploads"));
 
+app.get("/", (req, res) => {
+  res.json({ message: "Hello from Express on Vercel!" });
+});
+
 app.post("/upload", upload.single("image"), async (req, res) => {
   const imageUrl = `http://localhost:${PORT}/uploads/${req.file.filename}`;
 
